@@ -1,0 +1,153 @@
+/* ======== BACKGROUND DE CÉU ESTRELADO ======== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    scroll-behavior: smooth;
+    background: radial-gradient(ellipse at top, #1a2340, #0a0f1f 70%) fixed;
+    color: #fff;
+}
+
+/* Estrelas com movimento */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    background: transparent url("https://i.imgur.com/6NKPrhN.png") repeat;
+    opacity: 0.25;
+    animation: starsMove 200s linear infinite;
+    pointer-events: none;
+}
+
+@keyframes starsMove {
+    from { transform: translate(0, 0); }
+    to { transform: translate(-500px, -800px); }
+}
+
+/* ===== HEADER ===== */
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 70px;
+    background: rgba(10, 12, 30, 0.9);
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+}
+
+/* centralização do header */
+.header-container {
+    width: 85%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* LOGO */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffbaba;
+}
+
+/* NAV */
+nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #e6e6e6;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ff6767;
+}
+
+/* empurrar conteúdo por causa do header fixo */
+body {
+    padding-top: 80px;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+    width: 85%;
+    max-width: 900px;
+    margin: 40px auto 60px auto;
+    text-align: center;
+}
+
+/* ===== TÍTULOS ===== */
+.titulo-topo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #ffcdcd;
+}
+
+.titulo {
+    font-size: 42px;
+    color: #ff6767;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+/* ===== IMAGENS ===== */
+.img-container {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 25px;
+    margin-top: 20px;
+}
+
+.imgprincipal,
+.img-section {
+    width: 100%;
+    border-radius: 25px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Hover flutuante */
+.imgprincipal:hover,
+.img-section:hover {
+    transform: scale(1.06) translateY(-6px);
+    box-shadow: 0px 20px 25px rgba(0,0,0,0.6);
+}
+
+/* ===== TEXTOS ===== */
+.descricao {
+    font-size: 17px;
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+.subtitulo {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 35px;
+    color: #ffcdcd;
+}
+
+.topico {
+    margin-top: 60px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #ff9b9b;
+}
+
+.curiosidade {
+    margin-top: 10px;
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+p{
+    text-align: center;
+    font-style: italic;
+}
