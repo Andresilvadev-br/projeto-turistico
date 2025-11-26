@@ -52,9 +52,8 @@ Tudo feito apenas com **HTML e CSS**, provando o poder do front-end bem constru�
 
 ---
 
-# 🖼️ Prévia do Site
+<img width="1861" height="958" alt="image" src="https://github.com/user-attachments/assets/37f23a64-782f-49f0-9c27-f7034e4c195e" />
 
-> Insira aqui um screenshot do site (opcional)
 
 <div align="center">
 <img src="img/preview.png" width="900" style="border-radius:10px">
